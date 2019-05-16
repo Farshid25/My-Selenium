@@ -69,7 +69,8 @@ ENV PATH=/opt/robotframework/bin:/opt/robotframework/drivers:$PATH
 
 RUN chmod +x /opt/robotframework/bin/run-tests-in-virtual-screen.sh && \
     chmod +x /opt/robotframework/bin/chromium-browser && \
-    chmod +x /opt/robotframework/bin/chromedriver
+    chmod +x /opt/robotframework/bin/chromedriver && \
+    chmod +x /opt/robotframework/bin/run-container.sh 
 
 RUN mkdir /opt/robotframework/tests
 
