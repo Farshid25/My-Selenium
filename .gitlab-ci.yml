@@ -1,0 +1,19 @@
+image: alpine
+
+services:
+  - docker:dind
+  # Docker in docker
+
+build:
+  image: docker:stable
+  script:
+    - docker build .
+    # - push to gitlab registry
+# deploy:
+# - ssh into the Test VM
+# - pull image there
+# - run the application on the Test VM
+
+# test:
+# - use the previsouly created Robot image and run it
+# - test against the already running application on Test VM
